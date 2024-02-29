@@ -7,6 +7,7 @@ import {FaGithub, FaLinkedin, FaTwitter, FaTwitch, FaYoutube} from 'react-icons/
 import { MetaFunction } from "@remix-run/node";
 
 export async function loader(){
+	// return json(await client.getPage("James Jaeho Lee"))
 	return json(await client.getPage("Corgi"))
 }
 
@@ -61,8 +62,8 @@ export default function Index() {
 							<a href={links.GitHub} target="_blank" aria-label="GitHub"><FaGithub className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
 							<a href={links.Twitter} target="_blank" aria-label="Twitter"><FaTwitter className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
 							<a href={links.LinkedIn} target="_blank" aria-label="LinkedIn"><FaLinkedin className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
-							<a href={links.Twitch} target="_blank" aria-label="Twitch"><FaTwitch className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
-							<a href={links.YouTube} target="_blank" aria-label="YouTube"><FaYoutube className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
+							{/* <a href={links.Twitch} target="_blank" aria-label="Twitch"><FaTwitch className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
+							<a href={links.YouTube} target="_blank" aria-label="YouTube"><FaYoutube className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a> */}
 					</div>
 				</div>
   );

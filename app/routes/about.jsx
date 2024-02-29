@@ -26,7 +26,7 @@ export const richTextRenderOptions = {
 					<a
 						className="text-primary underline dark:text-secondary"
 						target="_blank"
-                        href={uri}
+						href={uri} rel="noreferrer"
 					>
 						{children[0]}
 					</a>

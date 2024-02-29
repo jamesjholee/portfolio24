@@ -44,12 +44,12 @@ export default function NavBar() {
 						isOpen ? 'block' : 'hidden'
 					} sm:flex sm:justify-between sm:p-0 sm:text-lg dark:text-white`}
 				>
-						<NavLink to="/writings" className="block py-1 underline-anim underline-animate sm:ml-4 text-primary">
+						{/* <NavLink to="/writings" className="block py-1 underline-anim underline-animate sm:ml-4 text-primary">
 							Writings
 						</NavLink>
 					<NavLink to="/talks" className="mt-1 block py-1 underline-anim underline-animate sm:mt-0 sm:ml-4  text-primary">
 							Talks
-						</NavLink>
+						</NavLink> */}
 						<NavLink to="/projects" className="mt-1 block py-1 underline-anim underline-animate sm:mt-0 sm:ml-4  text-primary">
 							Projects
 					</NavLink>

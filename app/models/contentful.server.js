@@ -20,13 +20,13 @@ async function getProjects() {
     
     const query = `
     {
-        projectsCollection (order:releaseDate_DESC){
+        projectsCollection (order:publishDate_DESC){
             items {
                 title
-                desc {
+                description {
                     json
                 }
-                releaseDate
+                publishDate
                 link
                 previewImage {
                     description
@@ -39,12 +39,13 @@ async function getProjects() {
     const json = await response.json()
     const formattedData = await json.data.projectsCollection.items.map(
 		async (project) => {
-			const { title, desc, releaseDate, link, previewImage } = project;
+      console.log(project)
+			const { title, description, publishDate, link, previewImage } = project;
 			const { css, img } = await getPlaiceholder(previewImage.url);
 			return {
 				title,
-				desc,
-				releaseDate,
+				description,
+				publishDate,
 				link,
 				image: img,
 				imageAlt: previewImage.description,
@@ -52,6 +53,8 @@ async function getProjects() {
 			};
 		}
 	);
+
+  console.log('zzzzz',formattedData)
 	return Promise.all(formattedData)
 }
 

@@ -100,7 +100,7 @@ export default function Projects() {
 										</a>
 									</h2>
 									{documentToReactComponents(
-										project.desc.json,
+										project.description.json,
 										richTextRenderOptions
 									)}
 								</div>
