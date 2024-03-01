@@ -7,8 +7,7 @@ import {FaGithub, FaLinkedin, FaTwitter, FaTwitch, FaYoutube} from 'react-icons/
 import { MetaFunction } from "@remix-run/node";
 
 export async function loader(){
-	// return json(await client.getPage("James Jaeho Lee"))
-	return json(await client.getPage("Corgi"))
+	return json(await client.getPage("James Jaeho Lee"))
 }
 
 export const meta = ({data}) => {

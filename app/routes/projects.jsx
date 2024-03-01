@@ -30,7 +30,7 @@ export const richTextRenderOptions = {
 					<a
 						className="text-primary underline dark:text-secondary"
 						target="_blank"
-                        href={uri}
+						href={uri} rel="noreferrer"
 					>
 						{children[0]}
 					</a>
@@ -89,7 +89,7 @@ export default function Projects() {
 								<div className="px-6 py-4">
 									<h2 className="font-bold text-lg sm:text-xl mb-2 dark:text-secondary">
 										{project.title}{' '}
-										<a href={project.link} target="_blank">
+										<a href={project.link} target="_blank" rel="noreferrer">
 											<span
 												role="image"
 												aria-label="internet"
